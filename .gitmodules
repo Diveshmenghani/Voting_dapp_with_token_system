@@ -1,3 +1,6 @@
 [submodule "backends"]
 	path = backends
 	url = git@github.com:Diveshmenghani/Voting_dapp_with_token_system.git
+[submodule "Server"]
+	path = Server
+	url = git@github.com:Diveshmenghani/Voting_dapp_with_token_system.git

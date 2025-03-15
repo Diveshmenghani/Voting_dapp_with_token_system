@@ -1,0 +1,261 @@
+[
+	{
+		"inputs": [],
+		"name": "announceVotingResult",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_voterId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_candidateId",
+				"type": "uint256"
+			}
+		],
+		"name": "castVote",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "emergencyStopVoting",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_party",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum Vote.Gender",
+				"name": "_gender",
+				"type": "uint8"
+			}
+		],
+		"name": "registerCandidate",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum Vote.Gender",
+				"name": "_gender",
+				"type": "uint8"
+			}
+		],
+		"name": "registerVoter",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_startTimeDuration",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_endTimeDuration",
+				"type": "uint256"
+			}
+		],
+		"name": "setVotingPeriod",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_gldToken",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "electionCommission",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getCandidateList",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "party",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Vote.Gender",
+						"name": "gender",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "candidateId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "candidateAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "votes",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Vote.Candidate[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getVoterList",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voterId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Vote.Gender",
+						"name": "gender",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCandidateId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "voterAddress",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Vote.Voter[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getVotingStatus",
+		"outputs": [
+			{
+				"internalType": "enum Vote.VotingStatus",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "gldToken",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "winner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

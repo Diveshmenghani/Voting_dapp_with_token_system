@@ -1,0 +1,45 @@
+/* voterList.css */
+
+/* Table container styles */
+.voter-list-table-container {
+    margin-top: 20px;
+  }
+  
+  /* Table styles */
+  .voter-list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Table header styles */
+  .voter-list-table-header {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 10px;
+    text-align: center;
+    color:#333;
+  
+  }
+  
+  /* Table body styles */
+  .voter-list-table-data {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Bottom border */
+    color:#333
+  }
+  
+  /* Alternate row background color */
+  .even-row {
+    background-color: #ffffff; /* Lighter grey background */
+  }
+  
+  /* Hover effect on rows */
+  .even-row:hover,
+  .odd-row:hover {
+    background-color: #E2DED0; /* Light grey background on hover */
+  }
+  
+  /* Odd row background color */
+  .odd-row {
+    background-color: #ffffff; /* White background */
+  }
+  
